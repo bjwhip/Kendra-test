@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#containerNavbarCenter" aria-controls="containerNavbarCenter" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-md-center" id="containerNavbarCenter">
+    <ul class="navbar-nav">
+      <%= login_helper %>
+      <%= nav_helper 'nav-link', 'div' %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Links</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown05">
+          <%= nav_helper_row_2 'nav-link', 'div' %>
+      </li>
+    </ul>
+  </div>
+</nav>

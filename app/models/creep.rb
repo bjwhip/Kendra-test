@@ -1,0 +1,2 @@
+class Creep < ApplicationRecord
+end

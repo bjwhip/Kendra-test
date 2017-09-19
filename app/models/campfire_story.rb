@@ -1,0 +1,2 @@
+class CampfireStory < ApplicationRecord
+end

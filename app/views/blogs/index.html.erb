@@ -1,0 +1,12 @@
+<h1>Show me the money</h1>
+
+<h3><%= link_to 'Create New Post', new_blog_path %></h3>
+
+<% @blog.each do |blog| %>
+  <p>
+    <ul><%= link_to blog.title, blog %></ul>
+    <ul><%= blog.body %></ul>
+    <ul><%= link_to 'Edit', edit_blog_path(blog) %></ul>
+    <ul><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></ul>
+  </p>
+<% end %>
